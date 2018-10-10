@@ -1,4 +1,4 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!-- The content below is only a placeholder and can be replaced.
 <div style="text-align:center">
   <h1>
     Bienvenue sur {{ title }}!
@@ -16,5 +16,22 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
+</ul> -->
 
+<router-outlet>
+  <div id="loadingWrapper" class="loadingWrapper" *ngIf="!onlineOffline">
+      <div class="loadingBoxWrapper">
+          <div class="loadingBoxText">
+              Il semblerait qu'il y ait un problème de connexion.<br /><br />
+              <button class="btn bg-purple" (click)="reloadPage()">Réessayer</button>
+          </div>
+      </div>
+  </div>
+  <div id="loadingWrapper2" class="loadingWrapper" *ngIf="onlineOffline">
+      <div class="loadingBoxWrapper">
+          <div class="loadingBoxText">
+              Chargement
+          </div>
+      </div>
+  </div>
+ </router-outlet>

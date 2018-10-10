@@ -1,0 +1,47 @@
+<div class="col-md-3 left_col menu_fixed">
+  <div class="left_col scroll-view">
+    <div class="navbar nav_title" style="border: 0;">
+      <a href="index.html" class="site_title"><img src="assets/images/logo-TNT.png" /> <span>Reva</span></a>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!-- menu profile quick info -->
+    <div class="profile clearfix">
+      <div class="profile_pic">
+        <img src="{{ environment.appImageUrl }}{{ me.avatar }}" alt="..." class="img-circle profile_img">
+      </div>
+      <div class="profile_info">
+        <h2>{{ me.firstname }} {{ me.lastname }}</h2>
+      </div>
+    </div>
+    <!-- /menu profile quick info -->
+
+    <br />
+
+    <!-- sidebar menu -->
+    <!-- <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+      <div class="menu_section">
+        <ul class="nav side-menu">
+          <li *ngFor="let menu of menus">
+            <a href="{{ menuPrefix }}/{{ menu.url }}" *ngIf="!menu.submenus">
+              <i class="fa {{ menu.icon }}"></i> {{ menu.title }}
+            </a>
+            <a *ngIf="menu.submenus">
+              <i class="fa {{ menu.icon }}"></i> {{ menu.title }}
+              <span class="fa fa-chevron-down" *ngIf="menu.submenus"></span>
+            </a>
+            <ul class="nav child_menu" *ngIf="menu.submenus">
+              <li *ngFor="let submenu of menu.submenus">
+                <a href="{{ menuPrefix }}/{{ submenu.url }}">{{ submenu.title }}</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </div> -->
+    <!-- /sidebar menu -->
+  </div>
+</div>
+
