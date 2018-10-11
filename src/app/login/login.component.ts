@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   loading = false;
   submitted = false;
   returnUrl: string;
-  redirect = [null, 'agent'];
+  redirect = [null, 'admin', 'directeur', 'manager', 'agent'];
 
   constructor(
     private authService: AuthService,
